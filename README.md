@@ -2,7 +2,7 @@
 
 This project implements a real-time **toon shading** and **outline rendering** pipeline in OpenGL. The goal is to recreate the stylized, flat-shaded look of hand-drawn animation using lighting quantization and silhouette extraction.
 <p align="center">
-  <img src="assets/Jet_set_radio.gif">
+  <img src="assets/toon-shader-botw.png">
 </p>
 
 # Features
