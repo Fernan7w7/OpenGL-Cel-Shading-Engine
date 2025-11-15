@@ -1,7 +1,7 @@
 # Toon Shading & Outline Rendering  Engine (OpenGL)
 
 This project implements a real-time **toon shading** and **outline rendering** pipeline in OpenGL. The goal is to recreate the stylized, flat-shaded look of hand-drawn animation using lighting quantization and silhouette extraction.
-![Jet][assets/Jet_set_radio.gif]
+![intro][assets/Cel_shading_composite_final_image.png]
 
 # Features
 -  Toon Shading:
@@ -37,6 +37,15 @@ We'll test both and decide which one to use
 - Fragment shaders for quantized lighting
 - Optional post-processing pass for outlines
 - Camera controls (arcball or FPS-style)
+
+# System Pipeline
+This is the overall rendering pipeline we’ll implement.
+- First, we load the scene and models.
+- Then we run a toon shading pass that computes quantized lighting.
+- After that, we run an outline extraction pass — either geometry-based or image-space.
+- Finally, we composite the results to produce the final rendered image.
+![intro][assets/pipeline.png]
+
 
 # Summary (If you are lazy)
 This project builds a modular, real-time OpenGL pipeline for stylized cartoon rendering. It combines simple lighting quantization with silhouette extraction to achieve a clean, expressive NPR visual style.
