@@ -44,8 +44,9 @@ This is the overall rendering pipeline we’ll implement.
 - Then we run a toon shading pass that computes quantized lighting.
 - After that, we run an outline extraction pass — either geometry-based or image-space.
 - Finally, we composite the results to produce the final rendered image.
-![intro][assets/pipeline.png]
-
+<p align="center">
+  <img src="assets/pipeline.png" width="500">
+</p>
 
 # Summary (If you are lazy)
 This project builds a modular, real-time OpenGL pipeline for stylized cartoon rendering. It combines simple lighting quantization with silhouette extraction to achieve a clean, expressive NPR visual style.
